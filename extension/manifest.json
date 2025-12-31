@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "AI Gmail Auto Reply",
+  "version": "1.0",
+  "description": "Generate AI-powered email replies inside Gmail",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://mail.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
